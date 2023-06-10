@@ -23,15 +23,23 @@ SOCIAL_MEDIA = {
     "LinkedIn": "https://linkedin.com/in/salahalbasha/",
     "GitHub": "https://github.com/salahalbasha/",
 }
+
 PROJECTS = {
-    "🏆 Pima Indians Diabetes Analysis - Exploring the Factors Behind the Disease among Pima Tribe Women": "https://youtu.be/Sb0A9i6d320",
-    "🏆 Hotel Booking Cancellation Prediction - Classification and Hypothesis Testing": "https://youtu.be/3egaMfE9388",
-    "🏆 US Accidents - Exploratory Data Analysis": "https://pythonandvba.com/mytoolbelt/",
+    "🏆 Pima Indians Diabetes Analysis": {
+        "link": "https://salahalbasha-pima-app-yo940c.streamlit.app/",
+        "skills_tools": "Python (Pandas, Numpy, Matplotlib, Seaborn), Machine Learning, Data Analysis",
+    },
+    "🏆 Netflix Movie Recommendation": {
+        "link": "https://salahalbasha-movie-app-c5pu9r.streamlit.app/",
+        "skills_tools": "Collaborative filtering, Matrix factorization, Recommendation systems",
+    },
+    "🏆 Analysis of United States Accidents": {
+        "link": "https://salahalbasha-accidents-accidents-8nnvpw.streamlit.app/",
+        "skills_tools": "Exploratory Data Analysis, BigData Cleaning, Data Visualization",
+    },
 }
 
-
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
-
 
 # --- LOAD CSS, PDF & PROFIL PIC ---
 with open(css_file) as f:
@@ -62,11 +70,17 @@ with col2:
 st.write('\n')
 cols = st.columns(len(SOCIAL_MEDIA))
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
-    cols[index].write(f"[{platform}]({link})")
+    # Add the 'square-link' class to LinkedIn and GitHub links
+    if platform == "LinkedIn" or platform == "GitHub":
+        cols[index].write(f"<a class='square-link' href='{link}'>{platform}</a>", unsafe_allow_html=True)
+    else:
+        cols[index].write(f"[{platform}]({link})")
+
 
 # --- SKILLS ---
 st.write('\n')
 st.subheader("Hard Skills")
+st.write("---")
 st.write(
     """
 - 🧑🏻‍💻 Programming: Python (Pandas, Numpy, Matplotlib, Seaborn), SQL
@@ -74,32 +88,35 @@ st.write(
 - 📚 Modeling: Logistic regression, linear regression, decition trees
 - 💻 Web Development: HTML, CSS
 - ⚛️ Version Control: Git, GitHub
-- 📽 PM Frameworks: Scrum, Confluence, Trello
-- 👷🏻‍♂️ Technical/SaaS: Slack, Markdown, Prompt Engineering
-- 📋 Digital Products/Apps: UI/UX, Figma, Canva
+- 📽 PM Frameworks: Scrum, Confluence, Trello
+- 👷🏻‍♂️ Technical/SaaS: Slack, Markdown, Prompt Engineering
+- 📋 Digital Products/Apps: UI/UX, Figma, Canva
 """
 )
 
 # --- EDUCATION AND QUALIFICATIONS---
 st.write('\n')
 st.subheader("Education & Qulifications")
+st.write("---")
 st.write(
     """
 - ✔️ Bachelor's of Applied Mathematics at Carleton
-- ✔️ Data Science and Machine Learning at MIT
+- ✔️ Data Science and Machine Learning Bootcamp at MIT
 - ✔️ 2 Years of expereince extracting actionable insights from data
-- ✔️ Strong hands on experience and knowledge in Python, SQL and Excel
+- ✔️ Strong hands-on experience and knowledge in Python, SQL and Excel
 - ✔️ Good understanding of statistical principles and their respective applications
 """
 )
 
-# --- Projects & Accomplishments ---
+
+# Projects & Accomplishments
 st.write('\n')
 st.subheader("Projects & Accomplishments")
 st.write("---")
-for project, link in PROJECTS.items():
-    st.write(f"[{project}]({link})")
-
+for project, details in PROJECTS.items():
+    st.write(f"[{project}]({details['link']})")
+    st.write(f"Skills & Tools: {details['skills_tools']}")
+    st.write("---")
 
 # --- WORK HISTORY ---
 st.write('\n')
@@ -108,7 +125,6 @@ st.write("---")
 
 # --- JOB 1
 st.write("🚧", "**Technical Support Analyst | Shopify**")
-st.write("11/2021 - 09/2022")
 st.write(
     """
 - ► Conducted in-depth technical troubleshooting using various tools and technologies to resolve complex merchant issues, while also measuring the KPIs of merchant satisfaction and issue resolution time using BigData analysis techniques.
@@ -121,7 +137,6 @@ st.write(
 # --- JOB 2
 st.write('\n')
 st.write("🚧", "**Fitness Sales Analyst | GoodLife Fitness**")
-st.write("11/2020 - 11/2021")
 st.write(
     """
 - ► Analyzed customer data to identify trends and insights that informed sales strategies, including the measurement of key performance indicators (KPIs) such as customer acquisition cost, customer lifetime value, and customer churn rate.
@@ -130,4 +145,57 @@ st.write(
 - ► Utilized machine learning techniques such as supervised and unsupervised learning, regression, and classification to identify hidden patterns and insights that helped improve the company's products and services.
 """
 )
+
+# --- CIRTIFICATIONS ---
+
+CERTIFICATION = {
+    "🎓️ Data Cleaning with Python Certification - Codecadamy": {
+        "link": "https://www.codecademy.com/profiles/salahalbasha/certificates/e773a003314c1be60da8388a90a77e78",
+    },
+    "🎓 Python 3 Certification - Codecadamy": {
+        "link": "https://www.codecademy.com/profiles/salahalbasha/certificates/6c152bd262967f8c941c9707ed636bda",
+    },
+    "🎓 BI Dashboards with Power BI - Codecadamy": {
+        "link": "https://www.codecademy.com/profiles/salahalbasha/certificates/1cb76ac48943853ca32c394afeb491c9",
+    },
+    "🎓 Tableau for Data Visualization - Codecadamy": {
+        "link": "https://www.codecademy.com/profiles/salahalbasha/certificates/bb909db0a89b47a59d9bf08a039e28ad",
+    },
+    "🎓 SQL Certification - Codecadamy": {
+        "link": "https://www.codecademy.com/profiles/salahalbasha/certificates/042a4e5884e3eb6ea1f2a12be6abb851",
+    },
+    "🎓 HTML Certification - Codecadamy": {
+        "link": "https://www.codecademy.com/profiles/salahalbasha/certificates/9eb0741e5ebef1f9f58a53bfac67d3a7",
+    },
+    "🎓 Scrum Product Owner Certified (SPOC)": {
+        "link": "",
+    },
+    "🎓 Introduction to UI and UX Design Certification - Codecadamy": {
+        "link": "https://www.codecademy.com/profiles/salahalbasha/certificates/4ccef8d532484ea2aeec3b3b3dbb4f9c",
+    },
+    "🎓 Command Line Certification - Codecadamy": {
+        "link": "https://www.codecademy.com/profiles/salahalbasha/certificates/c87ba0541f8be78bc2f4ba1128233f6f",
+    },
+}
+
+
+# -- CERTIFICATIONS --
+st.write('\n')
+st.subheader("Professional Development")
+st.write("---")
+for certification, details in CERTIFICATION.items():
+    st.write(f"[{certification}]({details['link']})")
+    
+# -- SOFT SKILLS --
+st.subheader("Soft Skills")
+st.write("---")
+"""
+- 🌍 English and Arabic (business-level), French and ASL (elementary level)
+
+- 🌍 Focused on creating accessible and inclusive Data Viz, including implementing information redundancy and using color palettes that are accessible to colorblind viewers
+- 🌍 Situational awareness, public speaking and leadership skills
+- 🌍 Strong interpersonal skills and routinely reaches out to colleagues to maintain transparency and manifest open communication.
+- 🌍 Ability to de-escalate tougher interactions.
+- 🌍 Familiar with integration of Agile methodologies in group projects.
+"""
 
