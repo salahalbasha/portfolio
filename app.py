@@ -115,7 +115,7 @@ st.write(
 
 # --- EDUCATION---
 st.write('\n')
-st.subheader("Education & Qulifications")
+st.subheader("Education")
 st.write("---")
 st.write("###### 🎓 Bachelor's of Applied Mathematics at Carleton")
 st.write("###### 🎓️ Data Science and Machine Learning Bootcamp at MIT")
