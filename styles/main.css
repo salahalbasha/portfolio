@@ -46,4 +46,12 @@ a.square-link:hover {
   border-color: #d33682;
 }
 
-
+.skills-box {
+  display: inline-block;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}

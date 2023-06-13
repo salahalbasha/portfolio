@@ -1,5 +1,5 @@
 from pathlib import Path
-
+from PIL import Image
 import streamlit as st
 from PIL import Image
 
@@ -29,7 +29,7 @@ SOCIAL_MEDIA = {
 PROJECTS = {
     "🏆 Pima Indians Diabetes Analysis": {
         "link": "https://salahalbasha-pima-app-yo940c.streamlit.app/",
-        "skills_tools": "Python (Pandas, Numpy, Matplotlib, Seaborn), Machine Learning, Data Analysis",
+        "skills_tools": "Python, Pandas, Numpy, Matplotlib, Seaborn, Machine Learning, Data Analysis",
         "description": "Explore diabetes factors using data analysis techniques on a dataset from the Pima tribe. The objective is to understand factors related to diabetes within the Pima tribe and explore potential associations between variables.",
     },
     "🏆 Netflix Movie Recommendation": {
@@ -39,7 +39,7 @@ PROJECTS = {
     },
     "🏆 Analysis of United States Accidents": {
         "link": "https://salahalbasha-accidents-accidents-8nnvpw.streamlit.app/",
-        "skills_tools": "Exploratory Data Analysis, Big Data Cleaning, Data Visualization",
+        "skills_tools": "Exploratory Data Analysis, Big Data Cleaning, Data Visualization, BigData",
         "description": "This project analyzes a real-world dataset of car accidents in the United States to uncover insights on accident frequency, distribution, and potential causes. By examining approximately 2.8 million records, the project aims to improve road safety and promote safe driving practices.",
     },
 }
@@ -88,8 +88,13 @@ st.write("---")
 for project, details in PROJECTS.items():
     st.write(f"### [{project}]({details['link']})")
     st.write(f"**Description**: {details['description']}")
-    st.write(f"**Skills & Tools**: {details['skills_tools']}")
+
+    skills_tools = details['skills_tools'].split(", ")
+    skills_html = " ".join(f"<span class='skills-box'>{skill_tool}</span>" for skill_tool in skills_tools)
+    st.markdown(skills_html, unsafe_allow_html=True)
+
     st.write("---")
+
 
 # --- SKILLS ---
 st.write('\n')
