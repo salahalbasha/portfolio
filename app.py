@@ -11,11 +11,11 @@ profile_pic = current_dir / "assets" / "profile-pic.png"
 
 
 # --- GENERAL SETTINGS ---
-PAGE_TITLE = "Digital CV | Salah Al-Basha"
+PAGE_TITLE = "Portfolio | Salah Al-Basha"
 PAGE_ICON = ":wave:"
 NAME = "Salah Al-Basha"
 DESCRIPTION = """
-Data Analyst | Assisting enterprises by supporting data-driven decision-making.
+Analyst | Assisting enterprises by supporting data-driven decision-making.
 
 """
 EMAIL = "salahalbasha12@yahoo.com"
@@ -113,16 +113,12 @@ st.write(
 """
 )
 
-# --- EDUCATION AND QUALIFICATIONS---
+# --- EDUCATION---
 st.write('\n')
 st.subheader("Education & Qulifications")
 st.write("---")
-st.write("✔️ Bachelor's of Applied Mathematics at Carleton")
-st.write("✔️ Data Science and Machine Learning Bootcamp at MIT")
-st.write("✔️ 2 Years of expereince extracting actionable insights from data")
-st.write("✔️ Strong hands-on experience and knowledge in Python, SQL and Excel")
-st.write("✔️ Good understanding of statistical principles and their respective applications")
-
+st.write("###### 🎓 Bachelor's of Applied Mathematics at Carleton")
+st.write("###### 🎓️ Data Science and Machine Learning Bootcamp at MIT")
 
 # --- WORK HISTORY ---
 st.write('\n')
@@ -130,7 +126,7 @@ st.subheader("Work History")
 st.write("---")
 
 # --- JOB 1
-st.write("🚧", "**Technical Support Analyst | Shopify**")
+st.write("#### 🚧 Analyst | Shopify")
 st.write(
     """
 - ► Conducted in-depth technical troubleshooting using various tools and technologies to resolve complex merchant issues, while also measuring the KPIs of merchant satisfaction and issue resolution time using BigData analysis techniques.
@@ -142,7 +138,7 @@ st.write(
 
 # --- JOB 2
 st.write('\n')
-st.write("🚧", "**Fitness Sales Analyst | GoodLife Fitness**")
+st.write("#### 🚧 Fitness Sales Analyst | GoodLife Fitness")
 st.write(
     """
 - ► Analyzed customer data to identify trends and insights that informed sales strategies, including the measurement of key performance indicators (KPIs) such as customer acquisition cost, customer lifetime value, and customer churn rate.
@@ -155,31 +151,31 @@ st.write(
 # --- CIRTIFICATIONS ---
 
 CERTIFICATION = {
-    "🎓️ Data Cleaning with Python Certification - Codecadamy": {
+    "️️️✔️ Data Cleaning with Python Certification - Codecadamy": {
         "link": "https://www.codecademy.com/profiles/salahalbasha/certificates/e773a003314c1be60da8388a90a77e78",
     },
-    "🎓 Python 3 Certification - Codecadamy": {
+    "✔️ Python 3 Certification - Codecadamy": {
         "link": "https://www.codecademy.com/profiles/salahalbasha/certificates/6c152bd262967f8c941c9707ed636bda",
     },
-    "🎓 BI Dashboards with Power BI - Codecadamy": {
+    "✔️ BI Dashboards with Power BI - Codecadamy": {
         "link": "https://www.codecademy.com/profiles/salahalbasha/certificates/1cb76ac48943853ca32c394afeb491c9",
     },
-    "🎓 Tableau for Data Visualization - Codecadamy": {
+    "✔️ Tableau for Data Visualization - Codecadamy": {
         "link": "https://www.codecademy.com/profiles/salahalbasha/certificates/bb909db0a89b47a59d9bf08a039e28ad",
     },
-    "🎓 SQL Certification - Codecadamy": {
+    "✔️ SQL Certification - Codecadamy": {
         "link": "https://www.codecademy.com/profiles/salahalbasha/certificates/042a4e5884e3eb6ea1f2a12be6abb851",
     },
-    "🎓 HTML Certification - Codecadamy": {
+    "✔️ HTML Certification - Codecadamy": {
         "link": "https://www.codecademy.com/profiles/salahalbasha/certificates/9eb0741e5ebef1f9f58a53bfac67d3a7",
     },
-    "🎓 Scrum Product Owner Certified (SPOC)": {
+    "✔️ Scrum Product Owner Certified (SPOC)": {
         "link": "",
     },
-    "🎓 Introduction to UI and UX Design Certification - Codecadamy": {
+    "✔️ Introduction to UI and UX Design Certification - Codecadamy": {
         "link": "https://www.codecademy.com/profiles/salahalbasha/certificates/4ccef8d532484ea2aeec3b3b3dbb4f9c",
     },
-    "🎓 Command Line Certification - Codecadamy": {
+    "✔️ Command Line Certification - Codecadamy": {
         "link": "https://www.codecademy.com/profiles/salahalbasha/certificates/c87ba0541f8be78bc2f4ba1128233f6f",
     },
 }
@@ -195,10 +191,9 @@ for certification, details in CERTIFICATION.items():
 # -- SOFT SKILLS --
 st.subheader("Soft Skills")
 st.write("---")
-st.write("🌍 English and Arabic (business-level), French and ASL (elementary level).")
-st.write("🌍 Focused on creating accessible and inclusive Data Viz, including implementing information redundancy and using color palettes that are accessible to colorblind viewers.")
+st.write("🌍 Focused on creating accessible and inclusive data visualization, including implementing information redundancy and using color palettes that are accessible to colorblind viewers.")
 st.write("🌍 Situational awareness, public speaking and leadership skills.")
-st.write("🌍 Strong interpersonal skills and routinely reaches out to colleagues to maintain transparency and manifest open communication.")
-st.write("🌍 Ability to de-escalate tougher interactions.")
-st.write("🌍 Familiar with integration of Agile methodologies in group projects.")
-
+st.write("🌍 Strong teamwork and interpersonal skills.")
+st.write("🌍 Experienced in conflict resolution.")
+st.write("🌍 Familiar with Scrum and other Agile methodologies.")
+st.write("🌍 Bilingual: English and Arabic.")
