@@ -24,18 +24,23 @@ SOCIAL_MEDIA = {
     "GitHub": "https://github.com/salahalbasha/",
 }
 
+
+
 PROJECTS = {
     "🏆 Pima Indians Diabetes Analysis": {
         "link": "https://salahalbasha-pima-app-yo940c.streamlit.app/",
         "skills_tools": "Python (Pandas, Numpy, Matplotlib, Seaborn), Machine Learning, Data Analysis",
+        "description": "Explore diabetes factors using data analysis techniques on a dataset from the Pima tribe. The objective is to understand factors related to diabetes within the Pima tribe and explore potential associations between variables.",
     },
     "🏆 Netflix Movie Recommendation": {
         "link": "https://salahalbasha-movie-app-c5pu9r.streamlit.app/",
         "skills_tools": "Collaborative filtering, Matrix factorization, Recommendation systems",
+        "description": "This project builds a recommendation system for online streaming platforms, like Netflix, to suggest relevant movies based on user interactions. Various recommendation techniques are employed, including rank-based and collaborative filtering. The system utilizes a ratings dataset to analyze user preferences and make personalized recommendations. The project aims to enhance customer satisfaction and increase platform revenue.",
     },
     "🏆 Analysis of United States Accidents": {
         "link": "https://salahalbasha-accidents-accidents-8nnvpw.streamlit.app/",
-        "skills_tools": "Exploratory Data Analysis, BigData Cleaning, Data Visualization",
+        "skills_tools": "Exploratory Data Analysis, Big Data Cleaning, Data Visualization",
+        "description": "This project analyzes a real-world dataset of car accidents in the United States to uncover insights on accident frequency, distribution, and potential causes. By examining approximately 2.8 million records, the project aims to improve road safety and promote safe driving practices.",
     },
 }
 
@@ -76,6 +81,15 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     else:
         cols[index].write(f"[{platform}]({link})")
 
+# Projects
+st.write('\n')
+st.subheader("Projects")
+st.write("---")
+for project, details in PROJECTS.items():
+    st.write(f"### [{project}]({details['link']})")
+    st.write(f"**Description**: {details['description']}")
+    st.write(f"**Skills & Tools**: {details['skills_tools']}")
+    st.write("---")
 
 # --- SKILLS ---
 st.write('\n')
@@ -98,25 +112,12 @@ st.write(
 st.write('\n')
 st.subheader("Education & Qulifications")
 st.write("---")
-st.write(
-    """
-- ✔️ Bachelor's of Applied Mathematics at Carleton
-- ✔️ Data Science and Machine Learning Bootcamp at MIT
-- ✔️ 2 Years of expereince extracting actionable insights from data
-- ✔️ Strong hands-on experience and knowledge in Python, SQL and Excel
-- ✔️ Good understanding of statistical principles and their respective applications
-"""
-)
+st.write("✔️ Bachelor's of Applied Mathematics at Carleton")
+st.write("✔️ Data Science and Machine Learning Bootcamp at MIT")
+st.write("✔️ 2 Years of expereince extracting actionable insights from data")
+st.write("✔️ Strong hands-on experience and knowledge in Python, SQL and Excel")
+st.write("✔️ Good understanding of statistical principles and their respective applications")
 
-
-# Projects & Accomplishments
-st.write('\n')
-st.subheader("Projects & Accomplishments")
-st.write("---")
-for project, details in PROJECTS.items():
-    st.write(f"[{project}]({details['link']})")
-    st.write(f"Skills & Tools: {details['skills_tools']}")
-    st.write("---")
 
 # --- WORK HISTORY ---
 st.write('\n')
@@ -189,13 +190,10 @@ for certification, details in CERTIFICATION.items():
 # -- SOFT SKILLS --
 st.subheader("Soft Skills")
 st.write("---")
-"""
-- 🌍 English and Arabic (business-level), French and ASL (elementary level)
-
-- 🌍 Focused on creating accessible and inclusive Data Viz, including implementing information redundancy and using color palettes that are accessible to colorblind viewers
-- 🌍 Situational awareness, public speaking and leadership skills
-- 🌍 Strong interpersonal skills and routinely reaches out to colleagues to maintain transparency and manifest open communication.
-- 🌍 Ability to de-escalate tougher interactions.
-- 🌍 Familiar with integration of Agile methodologies in group projects.
-"""
+st.write("🌍 English and Arabic (business-level), French and ASL (elementary level).")
+st.write("🌍 Focused on creating accessible and inclusive Data Viz, including implementing information redundancy and using color palettes that are accessible to colorblind viewers.")
+st.write("🌍 Situational awareness, public speaking and leadership skills.")
+st.write("🌍 Strong interpersonal skills and routinely reaches out to colleagues to maintain transparency and manifest open communication.")
+st.write("🌍 Ability to de-escalate tougher interactions.")
+st.write("🌍 Familiar with integration of Agile methodologies in group projects.")
 
