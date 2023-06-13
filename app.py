@@ -39,7 +39,7 @@ PROJECTS = {
     },
     "🏆 Analysis of United States Accidents": {
         "link": "https://salahalbasha-accidents-accidents-8nnvpw.streamlit.app/",
-        "skills_tools": "Exploratory Data Analysis, Big Data Cleaning, Data Visualization, BigData",
+        "skills_tools": "Exploratory Data Analysis, Data Cleaning, Data Visualization, BigData",
         "description": "This project analyzes a real-world dataset of car accidents in the United States to uncover insights on accident frequency, distribution, and potential causes. By examining approximately 2.8 million records, the project aims to improve road safety and promote safe driving practices.",
     },
 }
