@@ -151,6 +151,9 @@ st.write(
 # --- CIRTIFICATIONS ---
 
 CERTIFICATION = {
+    "️️️✔️ Data Science and Machine Learning: Making Data-Driven Decisions - MIT": {
+        "link": "https://verify.mygreatlearning.com/verify/QSMAMQYD",
+    },
     "️️️✔️ Data Cleaning with Python Certification - Codecadamy": {
         "link": "https://www.codecademy.com/profiles/salahalbasha/certificates/e773a003314c1be60da8388a90a77e78",
     },
