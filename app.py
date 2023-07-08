@@ -24,15 +24,13 @@ SOCIAL_MEDIA = {
     "GitHub": "https://github.com/salahalbasha/",
 }
 
-
-
 PROJECTS = {
     "🏆 Pima Indians Diabetes Analysis": {
         "link": "https://salahalbasha-pima-app-yo940c.streamlit.app/",
         "skills_tools": "Python, Pandas, Numpy, Matplotlib, Seaborn, Machine Learning, Data Analysis",
         "description": "Explore diabetes factors using data analysis techniques on a dataset from the Pima tribe. The objective is to understand factors related to diabetes within the Pima tribe and explore potential associations between variables.",
     },
-    "🏆 Netflix Movie Recommendation": {
+    "🏆 Movie Recommendation System": {
         "link": "https://salahalbasha-movie-app-c5pu9r.streamlit.app/",
         "skills_tools": "Collaborative filtering, Matrix factorization, Recommendation systems",
         "description": "This project builds a recommendation system for online streaming platforms, like Netflix, to suggest relevant movies based on user interactions. Various recommendation techniques are employed, including rank-based and collaborative filtering. The system utilizes a ratings dataset to analyze user preferences and make personalized recommendations. The project aims to enhance customer satisfaction and increase platform revenue.",
@@ -81,6 +79,53 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     else:
         cols[index].write(f"[{platform}]({link})")
 
+# --- EDUCATION---
+st.write('\n')
+st.subheader("Education")
+st.write("---")
+st.write("###### 🎓 Bachelor's of Applied Mathematics at Carleton")
+st.write("###### 🎓️ Data Science and Machine Learning Bootcamp at MIT")
+
+
+# --- WORK HISTORY ---
+st.write('\n')
+st.subheader("Work History")
+st.write("---")
+
+# --- JOB 1
+st.write("#### 🚧 Software Engineer | Chana Company Inc.")
+st.write(
+    """
+- ► Built a recommendation system using collaborative filtering and matrix factorization to provide personalized movie recommendations based on user ratings.
+- ► Examined 2.8 million US accident records, performed exploratory data analysis, implemented data cleaning techniques, and used data visualization tools to improve road safety and promote safe driving practices.
+- ► Collaborating with cross-functional teams to gather requirements, analyze user needs, and propose innovative solutions.
+- ► Conducting thorough testing and debugging of software applications to ensure optimal performance and reliability.
+"""
+)
+
+# --- JOB 2
+st.write("#### 🚧 Analyst | Shopify")
+st.write(
+    """
+- ► Conducted in-depth technical troubleshooting using various tools and technologies to resolve complex merchant issues, while also measuring the KPIs of merchant satisfaction and issue resolution time using BigData analysis techniques.
+- ► Analyzed merchant data and provided customized solutions to improve metrics such as conversion rates, customer satisfaction, and average order value using artificial intelligence (AI) and deep learning algorithms.
+- ► Developed expertise in Shopify's products and services to provide expert advice to merchants, while also leveraging data analytics to suggest improvements to existing products and services.
+- ► Collaborated with cross-functional teams on projects such as Bridge the Gap, the Next Pilot, and the US Capital, using data analysis and reporting to support project goals and track the success of each initiative.
+"""
+)
+
+# --- JOB 3
+st.write('\n')
+st.write("#### 🚧 Fitness Sales Analyst | GoodLife Fitness")
+st.write(
+    """
+- ► Analyzed customer data to identify trends and insights that informed sales strategies, including the measurement of key performance indicators (KPIs) such as customer acquisition cost, customer lifetime value, and customer churn rate.
+- ► Developed and maintained social media campaigns to increase customer engagement and revenue, using data analytics to track engagement and ROI, and optimize campaign strategies based on predictive and prescriptive analytics algorithms.
+- ► Conducted market research and competitive analysis using structured and unstructured data to stay informed of industry trends and customer preferences.
+- ► Utilized machine learning techniques such as supervised and unsupervised learning, regression, and classification to identify hidden patterns and insights that helped improve the company's products and services.
+"""
+)
+
 # Projects
 st.write('\n')
 st.subheader("Projects")
@@ -113,40 +158,7 @@ st.write(
 """
 )
 
-# --- EDUCATION---
-st.write('\n')
-st.subheader("Education")
-st.write("---")
-st.write("###### 🎓 Bachelor's of Applied Mathematics at Carleton")
-st.write("###### 🎓️ Data Science and Machine Learning Bootcamp at MIT")
 
-# --- WORK HISTORY ---
-st.write('\n')
-st.subheader("Work History")
-st.write("---")
-
-# --- JOB 1
-st.write("#### 🚧 Analyst | Shopify")
-st.write(
-    """
-- ► Conducted in-depth technical troubleshooting using various tools and technologies to resolve complex merchant issues, while also measuring the KPIs of merchant satisfaction and issue resolution time using BigData analysis techniques.
-- ► Analyzed merchant data and provided customized solutions to improve metrics such as conversion rates, customer satisfaction, and average order value using artificial intelligence (AI) and deep learning algorithms.
-- ► Developed expertise in Shopify's products and services to provide expert advice to merchants, while also leveraging data analytics to suggest improvements to existing products and services.
-- ► Collaborated with cross-functional teams on projects such as Bridge the Gap, the Next Pilot, and the US Capital, using data analysis and reporting to support project goals and track the success of each initiative.
-"""
-)
-
-# --- JOB 2
-st.write('\n')
-st.write("#### 🚧 Fitness Sales Analyst | GoodLife Fitness")
-st.write(
-    """
-- ► Analyzed customer data to identify trends and insights that informed sales strategies, including the measurement of key performance indicators (KPIs) such as customer acquisition cost, customer lifetime value, and customer churn rate.
-- ► Developed and maintained social media campaigns to increase customer engagement and revenue, using data analytics to track engagement and ROI, and optimize campaign strategies based on predictive and prescriptive analytics algorithms.
-- ► Conducted market research and competitive analysis using structured and unstructured data to stay informed of industry trends and customer preferences.
-- ► Utilized machine learning techniques such as supervised and unsupervised learning, regression, and classification to identify hidden patterns and insights that helped improve the company's products and services.
-"""
-)
 
 # --- CIRTIFICATIONS ---
 
