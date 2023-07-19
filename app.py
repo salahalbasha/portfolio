@@ -83,8 +83,8 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
 st.write('\n')
 st.subheader("Education")
 st.write("---")
-st.write("###### 🎓 Bachelor's of Applied Mathematics at Carleton")
-st.write("###### 🎓️ Data Science and Machine Learning Bootcamp at MIT")
+st.write("###### 🎓 B.Math, background in Computer Science at Carleton")
+st.write("###### 🎓️ Data Science and Machine Learning at MIT")
 
 
 # --- WORK HISTORY ---
@@ -104,6 +104,17 @@ st.write(
 )
 
 # --- JOB 2
+st.write("#### 🚧 AI Engineer | Lomdi AI")
+st.write(
+    """
+- ► Developed and maintained an innovative entertainment app for real-time conversations with celebrities and fictional characters using Python.
+- ► Leveraged Cloud Computing technologies to ensure scalability and optimize app performance for a large user base.
+- ► Implemented Google PaLM as the language processor to generate dynamic and context-aware responses in conversations.
+- ► Utilized Vertex AI for advanced machine learning capabilities, enhancing the app's conversational experience.
+"""
+)
+
+# --- JOB 3
 st.write("#### 🚧 Analyst | Shopify")
 st.write(
     """
@@ -114,7 +125,7 @@ st.write(
 """
 )
 
-# --- JOB 3
+# --- JOB 4
 st.write('\n')
 st.write("#### 🚧 Fitness Sales Analyst | GoodLife Fitness")
 st.write(
@@ -149,9 +160,9 @@ st.write(
     """
 - 🧑🏻‍💻 Programming: Python (Pandas, Numpy, Matplotlib, Seaborn), SQL
 - 📊 BI & Analytics tools: Power BI, Tableau, MS Excel
+- ⚛️ AI Tools: Google PaLM, Vertex AI, Cloud Computing
 - 📚 Modeling: Logistic regression, linear regression, decition trees
 - 💻 Web Development: HTML, CSS
-- ⚛️ Version Control: Git, GitHub
 - 📽 PM Frameworks: Scrum, Confluence, Trello
 - 👷🏻‍♂️ Technical/SaaS: Slack, Markdown, Prompt Engineering
 - 📋 Digital Products/Apps: UI/UX, Figma, Canva
