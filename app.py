@@ -9,7 +9,6 @@ css_file = current_dir / "styles" / "main.css"
 resume_file = current_dir / "assets" / "CV.pdf"
 profile_pic = current_dir / "assets" / "profile-pic.png"
 
-
 # --- GENERAL SETTINGS ---
 PAGE_TITLE = "Portfolio | Salah Al-Basha"
 PAGE_ICON = ":wave:"
@@ -44,12 +43,16 @@ PROJECTS = {
 
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 
-# --- LOAD CSS, PDF & PROFIL PIC ---
+# --- LOAD CSS, PDF & PROFILE PIC ---
 with open(css_file) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 profile_pic = Image.open(profile_pic)
+
+
+# Toggle Button State (initialize to Light Mode)
+# is_dark_mode = st.checkbox("Dark Mode", value=False, key="dark_mode_checkbox")
 
 
 # --- HERO SECTION ---
@@ -68,7 +71,6 @@ with col2:
     )
     st.write("📫", EMAIL)
 
-
 # --- SOCIAL LINKS ---
 st.write('\n')
 cols = st.columns(len(SOCIAL_MEDIA))
@@ -85,7 +87,6 @@ st.subheader("Education")
 st.write("---")
 st.write("###### 🎓 B.Math, background in Computer Science at Carleton")
 st.write("###### 🎓️ Data Science and Machine Learning at MIT")
-
 
 # --- WORK HISTORY ---
 st.write('\n')
@@ -151,7 +152,6 @@ for project, details in PROJECTS.items():
 
     st.write("---")
 
-
 # --- SKILLS ---
 st.write('\n')
 st.subheader("Hard Skills")
@@ -161,7 +161,7 @@ st.write(
 - 🧑🏻‍💻 Programming: Python (Pandas, Numpy, Matplotlib, Seaborn), SQL
 - 📊 BI & Analytics tools: Power BI, Tableau, MS Excel
 - ⚛️ AI Tools: Google PaLM, Vertex AI, Cloud Computing
-- 📚 Modeling: Logistic regression, linear regression, decition trees
+- 📚 Modeling: Logistic regression, linear regression, decision trees
 - 💻 Web Development: HTML, CSS
 - 📽 PM Frameworks: Scrum, Confluence, Trello
 - 👷🏻‍♂️ Technical/SaaS: Slack, Markdown, Prompt Engineering
@@ -169,9 +169,7 @@ st.write(
 """
 )
 
-
-
-# --- CIRTIFICATIONS ---
+# --- CERTIFICATIONS ---
 
 CERTIFICATION = {
     "️️️✔️ Data Science and Machine Learning: Making Data-Driven Decisions - MIT": {
@@ -206,14 +204,13 @@ CERTIFICATION = {
     },
 }
 
-
 # -- CERTIFICATIONS --
 st.write('\n')
 st.subheader("Professional Development")
 st.write("---")
 for certification, details in CERTIFICATION.items():
     st.write(f"[{certification}]({details['link']})")
-    
+
 # -- SOFT SKILLS --
 st.subheader("Soft Skills")
 st.write("---")
@@ -223,3 +220,151 @@ st.write("🌍 Strong teamwork and interpersonal skills.")
 st.write("🌍 Experienced in conflict resolution.")
 st.write("🌍 Familiar with Scrum and other Agile methodologies.")
 st.write("🌍 Bilingual: English and Arabic.")
+
+
+# Dark mode light mode toggle CSS
+st.markdown("""
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+
+* {font-family: 'Readex Pro';}
+
+
+a {
+    text-decoration: none;
+    color: white !important;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #d33682 !important;
+    text-decoration: none;
+}
+
+ul {list-style-type: none;}
+
+hr {
+    margin-top: 0px;
+    margin-bottom: 5%;
+}
+
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+a.square-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white !important;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+a.square-link:hover {
+  border-color: #d33682;
+}
+
+.skills-box {
+  display: inline-block;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+label {
+  position: relative;
+  width: 480px;
+  height: 180px;
+  display: block;
+  background: url('images/images1.gif');
+  background-size: cover;
+  background-position: center;
+  border: 10px solid rgba(198, 247, 253, 0.3);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 1s ease;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+label::after {
+  content: '';
+  position: absolute;
+  height: 110px;
+  width: 110px;
+  background: #f2f2f2;
+  border-radius: 50%;
+  top: 25px;
+  left: 30px;
+  transition: 0.8s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+label::before {
+  content: '';
+  position: absolute;
+  height: 110px;
+  width: 110px;
+  border: 10px solid rgba(198, 247, 253, 0.3);
+  border-radius: 50%;
+  top: 15px;
+  left: 20px;
+  transition: 0.8s ease;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.18);
+}
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #9ad6f7;
+  z-index: -1;
+  transition: all 1s ease;
+}
+
+input:checked ~ label::after {
+  left: 430px;
+  transform: translateX(-100%);
+  background: #777ba5;
+}
+input:checked ~ label::before {
+  left: 440px;
+  border: 10px solid rgba(90, 79, 136, 0.2);
+  transform: translateX(-100%);
+}
+input:checked ~ label {
+  background: url('images/images2.gif');
+  background-size: cover;
+  background-position: center;
+  border: 10px solid rgba(90, 79, 136, 0.2);
+}
+input:checked ~ .background {
+  background: #0e377c;
+}
+input {
+  display: none;
+}
+</style>
+""", unsafe_allow_html=True)
+
