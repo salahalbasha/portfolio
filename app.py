@@ -14,7 +14,7 @@ PAGE_TITLE = "Portfolio | Salah Al-Basha"
 PAGE_ICON = ":wave:"
 NAME = "Salah Al-Basha"
 DESCRIPTION = """
-Analyst | Assisting enterprises by supporting data-driven decision-making.
+Senior Pricing Analyst | Assisting enterprises by supporting data-driven decision-making.
 
 """
 EMAIL = "salahalbasha12@yahoo.com"
@@ -85,8 +85,8 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
 st.write('\n')
 st.subheader("Education")
 st.write("---")
-st.write("###### 🎓 B.Math, background in Computer Science at Carleton")
-st.write("###### 🎓️ Data Science and Machine Learning at MIT")
+st.write("###### 🎓 Bachelor of Applied Mathematics and Computer Science minor | Carleton")
+st.write("###### 🎓️ Data Science and Machine Learning | MIT")
 
 # --- WORK HISTORY ---
 st.write('\n')
@@ -94,6 +94,16 @@ st.subheader("Work History")
 st.write("---")
 
 # --- JOB 1
+st.write("#### 🚧 Senior Pricing Analyst | J.D. Irving - RST")
+st.write(
+    """
+- ► Managed a complex pricing model for JDI's Transportation and Logistics division, RST, ensuring accurate calculations of price elasticity to derive linehaul rates for gas, fuel, dry bulk, and chemical/specialty products transportation across Atlantic Canada, Central Canada, and the United States.
+- ► Conducted a high-level analysis of accessorial charges for a Lean Six Sigma Green Belt project, collaborating seamlessly with cross-functional teams comprising Operations, business and financial analysts, as well as fleet and sales managers. Developed statement mapping across TMW and Oracle’s JD Edwards software to identify discrepancies in general ledger codes for accessorial charges, targeting improvements in financial metrics by $150,000+.
+- ► Leveraged Trimble’s transportation management software, TMW.Suite, and IBM’s Cognos for streamlined invoicing, auditing/billing reports, rate maintenance and financial analysis.
+"""
+)
+
+# --- JOB 2
 st.write("#### 🚧 Software Engineer | Chana Company Inc.")
 st.write(
     """
@@ -104,7 +114,7 @@ st.write(
 """
 )
 
-# --- JOB 2
+# --- JOB 3
 st.write("#### 🚧 AI Engineer | Lomdi AI")
 st.write(
     """
@@ -115,26 +125,22 @@ st.write(
 """
 )
 
-# --- JOB 3
+# --- JOB 4
 st.write("#### 🚧 Analyst | Shopify")
 st.write(
     """
-- ► Conducted in-depth technical troubleshooting using various tools and technologies to resolve complex merchant issues, while also measuring the KPIs of merchant satisfaction and issue resolution time using BigData analysis techniques.
-- ► Analyzed merchant data and provided customized solutions to improve metrics such as conversion rates, customer satisfaction, and average order value using artificial intelligence (AI) and deep learning algorithms.
-- ► Developed expertise in Shopify's products and services to provide expert advice to merchants, while also leveraging data analytics to suggest improvements to existing products and services.
+- ► Resolved complex merchant issues relating to SEO, domains, UI/UX, frontend troubleshooting in HTML/CSS and KPIs.
 - ► Collaborated with cross-functional teams on projects such as Bridge the Gap, the Next Pilot, and the US Capital, using data analysis and reporting to support project goals and track the success of each initiative.
 """
 )
 
-# --- JOB 4
+# --- JOB 5
 st.write('\n')
 st.write("#### 🚧 Fitness Sales Analyst | GoodLife Fitness")
 st.write(
     """
-- ► Analyzed customer data to identify trends and insights that informed sales strategies, including the measurement of key performance indicators (KPIs) such as customer acquisition cost, customer lifetime value, and customer churn rate.
-- ► Developed and maintained social media campaigns to increase customer engagement and revenue, using data analytics to track engagement and ROI, and optimize campaign strategies based on predictive and prescriptive analytics algorithms.
-- ► Conducted market research and competitive analysis using structured and unstructured data to stay informed of industry trends and customer preferences.
-- ► Utilized machine learning techniques such as supervised and unsupervised learning, regression, and classification to identify hidden patterns and insights that helped improve the company's products and services.
+- ► Analyzed customer data, identified trends, and informed sales strategies, including KPI measurement.
+- ► Managed social media campaigns, tracked engagement and ROI, and optimized strategies with data analytics.
 """
 )
 
@@ -158,14 +164,17 @@ st.subheader("Hard Skills")
 st.write("---")
 st.write(
     """
-- 🧑🏻‍💻 Programming: Python (Pandas, Numpy, Matplotlib, Seaborn), SQL
+- 🧑🏻‍💻 Programming Languages: Python (Pandas, NumPy), Jupyter Notebook, Google Colab
+- 📈 Data Visualization: Seaborn, Matplotlib
 - 📊 BI & Analytics tools: Power BI, Tableau, MS Excel
-- ⚛️ AI Tools: Google PaLM, Vertex AI, Cloud Computing
+- ⚛️ AI Tools: Google PaLM, Vertex AI, Cloud Computing, Knowledge of Large Language Models
 - 📚 Modeling: Logistic regression, linear regression, decision trees
 - 💻 Web Development: HTML, CSS
-- 📽 PM Frameworks: Scrum, Confluence, Trello
+- 📽 PM Frameworks: Scrum, Confluence, Trello, Jira
 - 👷🏻‍♂️ Technical/SaaS: Slack, Markdown, Prompt Engineering
+- 🔗  Familiar with Scrum and other Agile methodologies
 - 📋 Digital Products/Apps: UI/UX, Figma, Canva
+
 """
 )
 
@@ -218,7 +227,6 @@ st.write("🌍 Focused on creating accessible and inclusive data visualization, 
 st.write("🌍 Situational awareness, public speaking and leadership skills.")
 st.write("🌍 Strong teamwork and interpersonal skills.")
 st.write("🌍 Experienced in conflict resolution.")
-st.write("🌍 Familiar with Scrum and other Agile methodologies.")
 st.write("🌍 Bilingual: English and Arabic.")
 
 
