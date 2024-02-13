@@ -1,7 +1,6 @@
 from pathlib import Path
 from PIL import Image
 import streamlit as st
-from PIL import Image
 
 # --- PATH SETTINGS ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
@@ -14,7 +13,7 @@ PAGE_TITLE = "Portfolio | Salah Al-Basha"
 PAGE_ICON = ":wave:"
 NAME = "Salah Al-Basha"
 DESCRIPTION = """
-Senior Pricing Analyst | Assisting enterprises by supporting data-driven decision-making.
+Senior Pricing Analyst at J.D. Irving - RST
 
 """
 EMAIL = "salahalbasha12@yahoo.com"
@@ -158,25 +157,6 @@ for project, details in PROJECTS.items():
 
     st.write("---")
 
-# --- SKILLS ---
-st.write('\n')
-st.subheader("Hard Skills")
-st.write("---")
-st.write(
-    """
-- 🧑🏻‍💻 Programming Languages: Python (Pandas, NumPy), Jupyter Notebook, Google Colab
-- 📈 Data Visualization: Seaborn, Matplotlib
-- 📊 BI & Analytics tools: Power BI, Tableau, MS Excel
-- ⚛️ AI Tools: Google PaLM, Vertex AI, Cloud Computing, Knowledge of Large Language Models
-- 📚 Modeling: Logistic regression, linear regression, decision trees
-- 💻 Web Development: HTML, CSS
-- 📽 PM Frameworks: Scrum, Confluence, Trello, Jira
-- 👷🏻‍♂️ Technical/SaaS: Slack, Markdown, Prompt Engineering
-- 🔗  Familiar with Scrum and other Agile methodologies
-- 📋 Digital Products/Apps: UI/UX, Figma, Canva
-
-"""
-)
 
 # --- CERTIFICATIONS ---
 
@@ -220,13 +200,19 @@ st.write("---")
 for certification, details in CERTIFICATION.items():
     st.write(f"[{certification}]({details['link']})")
 
-# -- SOFT SKILLS --
-st.subheader("Soft Skills")
+# -- SKILLS --
+st.subheader("Skills")
 st.write("---")
+st.write("🌍 Data Analysis & Visualization: Python (Pandas, NumPy, Seaborn, Matplotlib, Google Colab, Jupyter Notebooks), Excel (VLOOKUPS, PivotTables, What-If Analysis)")
+st.write("🌍 AI Tools: Google PaLM, Vertex AI, Cloud Computing, Knowledge of Large Language Models.")
+st.write("🌍 BI & Analytics Tools: MySQL, Tableau, Power BI, Cognos.")
+st.write("🌍 Web Development: HTML, CSS.")
+st.write("🌍 PM Frameworks: Scrum, Agile, Confluence, Trello, Jira, Sig Sigma.")
+st.write("🌍 Technical/SaaS: Slack, Markdown, Prompt Engineering.")
+st.write("🌍 Digital Products/Apps: UI/UX, Figma, Canva.")
+st.write("🌍 Data Wrangling: Data Cleaning & Preparation, Exploratory Data Analysis, Feature Engineering, Predictive Modelling.")
 st.write("🌍 Focused on creating accessible and inclusive data visualization, including implementing information redundancy and using color palettes that are accessible to colorblind viewers.")
 st.write("🌍 Situational awareness, public speaking and leadership skills.")
-st.write("🌍 Strong teamwork and interpersonal skills.")
-st.write("🌍 Experienced in conflict resolution.")
 st.write("🌍 Bilingual: English and Arabic.")
 
 
@@ -375,4 +361,3 @@ input {
 }
 </style>
 """, unsafe_allow_html=True)
-
